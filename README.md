@@ -43,5 +43,7 @@ $\i create_tables.sql //run the create_tables.sql to create tables
 
 $\dt list the tables created
 
+#### Drop the database
+DROP DATABASE conference_app;
 
 
