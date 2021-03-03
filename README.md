@@ -23,6 +23,18 @@ $docker create --name postgres-demo -e POSTGRES_PASSWORD=Welcome -p 5432:5432 po
 
 $docker start postgres-demo
 
+$docker stop postgres-demo
+
+#### Create the database
+
+$docker exec -it postgres-demo psql -U postgres
+
+$create database conference_app;
+
+$\l // list databases
+
+$\q // exit psql
+
 $docker cp create_tables.sql postgres-demo:/create_tables.sql // copy the sql file to docker container
 
 $docker exec -it postgres-demo psql -d conference_app -f create_tables.sql -U postgres // run the sql file
