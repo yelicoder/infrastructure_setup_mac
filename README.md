@@ -43,7 +43,7 @@ $docker cp insert_data.sql postgres-demo:/insert_data.sql // copy the sql file t
 
 $docker exec -it postgres-demo psql -d conference_app -f insert_data.sql -U postgres // run the sql file
 
-## After copy the sql file to docker container, you can also run the sql file after connect to teh database
+#### After copy the sql file to docker container, you can also run the sql file after connect to teh database
 
 $docker exec -it postgres-demo psql -U postgres
 
@@ -57,5 +57,9 @@ $\dt list the tables created
 
 #### Drop the database
 DROP DATABASE conference_app;
+
+#### install pgadmin4 docker image
+$docker pull dpage/pgadmin4
+
 
 
