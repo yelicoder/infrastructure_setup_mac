@@ -16,6 +16,28 @@ $docker --version
 $docker run hello-world
 # Install mysql
 $docker pull mysql
+
+## Setup mySQL database
+### create docker-compse.yml
+version: '3.8'
+
+networks:
+  default:
+
+services:
+   db:
+     image: mysql:5.7
+     container_name: conference_security
+     ports:
+       - 3306:3306
+     volumes:
+       - "./.data/db:/var/lib/mysql"
+     environment:
+       MYSQL_ROOT_PASSWORD: pass
+       MYSQL_DATABASE: conference_security
+       
+### Run $docker-compose up -d
+       
 # Install postgres
 $docker pull postgres
 
