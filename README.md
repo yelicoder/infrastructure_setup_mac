@@ -18,7 +18,7 @@ $docker run hello-world
 $docker pull mysql
 
 ## Setup mySQL database
-### create docker-compse.yml
+### create docker-compose.yml
 version: '3.8'
 
 networks:
