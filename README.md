@@ -19,6 +19,7 @@ $docker pull mysql
 
 ## Setup mySQL database
 ### create docker-compose.yml
+https://github.com/yelicoder/spring-security-conference/blob/master/docker-compose.yml
 version: '3.8'
 
 networks:
