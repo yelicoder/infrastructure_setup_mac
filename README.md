@@ -97,5 +97,7 @@ DROP DATABASE conference_app;
 #### install pgadmin4 docker image
 $docker pull dpage/pgadmin4
 
+### Install MongoDB
+$docker pull mongo
 
 
