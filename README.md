@@ -1,6 +1,9 @@
 # infrastructure_setup_mac
 Setup development environment on Mac
 # Install Java11
+
+https://devqa.io/brew-install-java/
+
 $brew update
 
 $brew install java11
