@@ -15,6 +15,9 @@ $ls -lsah /Library/Java/JavaVirtualMachines/
 $brew tap adoptopenjdk/openjdk 
 $brew search adoptopenjdk to find other versions of jdk
 $/usr/libexec/java_home -V to list all jdk installed on the machine
+
+$brew untap homebrew/cask-versions to clean up the homebrew/cask-versions tap
+$brew install adoptopenjdk8
 ```
 add the following to ~/.zshrc to switch between JDKs
 ```
@@ -24,6 +27,11 @@ jdk() {
       export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
       java -version
 }
+
+$jdk 1.8
+$jdk 11
+$jdk
+
 ```
 
 # Install IntelliJ
