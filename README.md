@@ -37,7 +37,10 @@ $jdk
 ```
 $brew install maven
 ```
-
+## config git
+```
+git config --global --edit
+```
 ## Install IntelliJ
 Download IntelliJ.dmg
 ## Install Docker Desktop
