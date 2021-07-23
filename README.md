@@ -3,6 +3,8 @@ Setup development environment on Mac
 # Install Java11
 
 https://mkyong.com/java/how-to-install-java-on-mac-osx/
+
+```
 $brew search java to find all available Java-related formula
 $brew info java
 $brew install java
@@ -13,6 +15,7 @@ $ls -lsah /Library/Java/JavaVirtualMachines/
 $brew tap adoptopenjdk/openjdk 
 $brew search adoptopenjdk to find other versions of jdk
 $/usr/libexec/java_home -V to list all jdk installed on the machine
+```
 add the following to ~/.zshrc to switch between JDKs
 ```
 jdk() {
