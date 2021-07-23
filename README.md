@@ -1,6 +1,6 @@
 # infrastructure_setup_mac
 Setup development environment on Mac
-# Install Java11
+## Install Java
 
 https://mkyong.com/java/how-to-install-java-on-mac-osx/
 
@@ -33,20 +33,24 @@ $jdk 11
 $jdk
 
 ```
+## Install maven
+```
+$brew install maven
+```
 
-# Install IntelliJ
+## Install IntelliJ
 Download IntelliJ.dmg
-# Install Docker Desktop
+## Install Docker Desktop
 Download Docker.dmg from hub.docker.com
 
 $docker --version
 
 $docker run hello-world
-# Install mysql
+## Install mysql
 $docker pull mysql
 
-## Setup mySQL database
-### create docker-compose.yml
+### Setup mySQL database
+#### create docker-compose.yml
 https://github.com/yelicoder/spring-security-conference/blob/master/docker-compose.yml
 version: '3.8'
 
@@ -78,9 +82,9 @@ services:
        MYSQL_DATABASE: conference_security
        
        
-### Run $docker-compose up -d
+#### Run $docker-compose up -d
        
-# Install postgres
+## Install postgres
 $docker pull postgres
 
 $docker create --name postgres-demo -e POSTGRES_PASSWORD=pass -p 5432:5432 postgres:11.5-alpine
@@ -122,10 +126,10 @@ $\dt list the tables created
 #### Drop the database
 DROP DATABASE conference_app;
 
-#### install pgadmin4 docker image
+### install pgadmin4 docker image
 $docker pull dpage/pgadmin4
 
-### Install MongoDB
+## Install MongoDB
 * $docker pull mongo
 * create docker-compose.yml
 ```
