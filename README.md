@@ -2,13 +2,27 @@
 Setup development environment on Mac
 # Install Java11
 
-https://devqa.io/brew-install-java/
+https://mkyong.com/java/how-to-install-java-on-mac-osx/
+$brew search java to find all available Java-related formula
+$brew info java
+$brew install java
+$sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk  
+$brew install openjdk@11
+$sudo ln -sfn /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
+$ls -lsah /Library/Java/JavaVirtualMachines/ 
+$brew tap adoptopenjdk/openjdk 
+$brew search adoptopenjdk to find other versions of jdk
+$/usr/libexec/java_home -V to list all jdk installed on the machine
+add the following to ~/.zshrc to switch between JDKs
+```
+jdk() {
+      version=$1
+      unset JAVA_HOME;
+      export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
+      java -version
+}
+```
 
-$brew update
-
-$brew install java11
-
-$sudo ln -sfn /usr/local/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachine/openjdk.jdk
 # Install IntelliJ
 Download IntelliJ.dmg
 # Install Docker Desktop
