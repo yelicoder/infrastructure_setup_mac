@@ -41,6 +41,8 @@ $brew install maven
 ```
 git config --global --edit
 ```
+* once the personal access token in generated, use it once for push and you do not need to give it again.
+
 ## Install IntelliJ
 Download IntelliJ.dmg
 ## Install Docker Desktop
