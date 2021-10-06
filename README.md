@@ -154,4 +154,7 @@ services:
 ```
 * $ docker-compose up -d
 
+## install eclipse
+* $ brew install --cask eclipse-java
+
 
